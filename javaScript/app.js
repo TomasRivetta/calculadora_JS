@@ -22,7 +22,7 @@ buttons.forEach(
                 display.innerText= eval(display.innerText);
             }
             else if(display.innerText=="" && item.id == "equal"){
-                display,innerText = "Null";
+                display.innerText = "Null";
                 setTimeout(()=>(display.innerText=""),2000)
             }
             else{
