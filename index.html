@@ -11,56 +11,86 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/botones.css">
-
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <header>
 
     </header>
     <main>
-        <div class="container__principal">
+        <div class="container">
 
-            <div class="container__calculadora">
+            <div class="calculator dark">
 
-                <div>
-                    <textarea></textarea>
+                <div class="theme-toggle active">
+
+                    <i class="toggler-icon"></i>
+
                 </div>
-    
-                <div>
-                    <div class="container__botones">
-    
-                        <button class="boton--borrarTodo">C</button>
-                        <button class="boton--parentesisIzq">(</button>
-                        <button class="boton--parentesisDer">)</button>
-                        <button class="boton--porcentaje">%</button>
-                        <button class="boton--siete">7</button>
-                        <button class="boton--ocho">8</button>
-                        <button class="boton--nueve">9</button>
-                        <button class="boton--division">/</button>
-                        <button class="boton--cuatro">4</button>
-                        <button class="boton--cinco">5</button>
-                        <button class="boton--seis">6</button>
-                        <button class="boton--multi">x</button>
-                        <button class="boton--uno">1</button>
-                        <button class="boton--dos">2</button>
-                        <button class="boton--tres">3</button>
-                        <button class="boton--resta">-</button>
-                        <button class="boton--suma">+</button>
-                        <button class="boton--cero">0</button>
-                        <button class="boton--punto">.</button>
-                        <button class="boton--igual"> = </button>
+
+                <div class="display-screen">
+
+                    <div id="display"></div>
+
+                </div>
+
+                <div class="buttons">
+                    <table>
                         
-                    </div>
-    
+                        <tr>
+                            <td><button class="btn-operator" id="clear">C</button></td>
+                            <td><button class="btn-operator" id="/">/</button></td>
+                            <td><button class="btn-operator" id="*">X</button></td>
+                            <td><button class="btn-operator" id="backspace"> < </button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td><button class="btn-number" id="7">7</button></td>
+                            <td><button class="btn-number" id="8">8</button></td>
+                            <td><button class="btn-number" id="9">9</button></td>
+                            <td><button class="btn-operator" id="-">-</button></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td><button class="btn-number" id="4">4</button></td>
+                            <td><button class="btn-number" id="5">5</button></td>
+                            <td><button class="btn-number" id="6">6</button></td>
+                            <td><button class="btn-operator" id="+">+</button></td>
+
+                        </tr>
+
+                        <tr>
+                            
+                            <td><button class="btn-number" id="1">1</button></td>
+                            <td><button class="btn-number" id="2">2</button></td>
+                            <td><button class="btn-number" id="3">3</button></td>
+                            
+                            <td rowspan="2"><button class="btn-equal" id="="> = </button></td>
+
+                        </tr>
+
+                        <tr>
+                            
+                            <td><button class="btn-operator" id=".">.</button></td>
+                            <td><button class="btn-number" id="0">0</button></td>
+                            <td><button class="btn-number" id="00">00</button></td>
+
+                        </tr>
+
+                    </table>
                 </div>
 
             </div>
 
-
         </div>
     </main>
+
+    <footer></footer>
+
+    <script src="javaScript/app.js" type="module"></script>
 </body>
 </html>
